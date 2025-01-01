@@ -27,7 +27,7 @@ cleanup() {
 # 从配置文件获取下载URL
 get_download_url() {
     CONFIG_FILE="/etc/sing-box/config.json"
-    DEFAULT_URL="https://ghproxy.cc/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+    DEFAULT_URL="https://ghgo.xyz/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
     
     if [ -f "$CONFIG_FILE" ]; then
         URL=$(grep -oP '(?<="external_ui_download_url": ")[^"]*' "$CONFIG_FILE")
